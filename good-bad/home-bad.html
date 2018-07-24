@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
 
@@ -130,10 +130,13 @@
 
             <form class="m-0 mr-4" role="search">
               <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
-              <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
+              <label for="search">Search</label>
+              <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" id="search" placeholder="Type term...">
               <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
               <button class="btn btn-tertiary search-button my-sm-0 ml-0 p-1" type="submit">
                 <img src="../images/icon-search.png">
+                <span class="icon" aria-hidden="true"></span>
+                <span class="sr-only">Search</span>
               </button>
             </form>
 
