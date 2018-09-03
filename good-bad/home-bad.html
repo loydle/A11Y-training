@@ -57,7 +57,7 @@
 
         <button class="btn btn-secondary btn-sm" id="annotations01">WCAG Annotations</button>
 
-        <div class="table-of-contents">
+        <div class="">
 
           <h2 class="m-0" id="title-toc">
             <button class="btn btn-secondary btn-sm" type="button" data-toggle="collapse" data-target="#table-of-contents" aria-expanded="false" aria-controls="table-of-contents">
@@ -102,18 +102,24 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div aria-controls="mainMenuItems" aria-expanded="false" class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <div class="mr-auto">
             <div class="navbar-nav">
-              <div class="nav-item active">
+
+              <div class="nav-item active" aria-current="page">
                 <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal06">06</button>
                 <a class="nav-link btn-annot-outline" href="../good-bad/home.html" id="main-menu">Home</a>
-                <div class="pagination pagination-navbar">
-                  <div class="page-item"><a class="page-link" href="../good-bad/home.html">Good</a></div>
-                  <div class="page-item"><a class="page-link active" href="../good-bad/home-bad.html">Bad</a></div>
-                </div>                
               </div>
+
+              <div class="nav-item">
+                <a class="nav-link" href="../good-bad/home.html">Good</a>
+              </div>
+
+              <div class="nav-item">
+                <a class="nav-link" href="../good-bad/home-bad.html">Bad</a>
+              </div>
+
               <div class="nav-item">
                 <a class="nav-link" href="../good-bad/article.html">Article</a>
               </div>
@@ -121,7 +127,7 @@
                 <a class="nav-link" href="../good-bad/media.html">Media</a>
               </div>
               <div class="nav-item">
-                <a class="nav-link" href../../good-bad/request.html">Request</a>
+                <a class="nav-link" href="../../good-bad/request.html">Request</a>
               </div>
             </div>
           </div>
